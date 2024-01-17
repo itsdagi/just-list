@@ -1,11 +1,12 @@
 import React from 'react';
-import './style.css';
+import './App.css';
+import {useState} from 'react'
 
 export default function App() {
+  const [tasks, setTasks] = useState({id: 1, name:'dagim'},{id: 2, name:"abebe"},{id: 3, name:"zeleke"})
   return (
-    <div>
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+    <div className='App'>
+      
     </div>
   );
 }
