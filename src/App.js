@@ -3,7 +3,7 @@ import './App.css';
 import {useState} from 'react'
 
 export default function App() {
-  const [tasks, setTasks] = useState([{id: 1, name:'dagim', completed: false},{id: 2, name:"abebe",completed: false},{id: 3, name:"zeleke",completed: true},])
+  const [tasks, setTasks] = useState([{id: 1, name:'Dagim', completed: false},{id: 2, name:"Abebe",completed: false},{id: 3, name:"Zeleke",completed: true},])
   return (
     <div className='App'>
       <h1>
@@ -11,8 +11,9 @@ export default function App() {
       </h1>
          <ul>
           {tasks.map((task)=>(
-            <li>
-                
+            <li key={task.id}>
+                <span>{task.id} - {task.name}</span>
+                <button>Delete</button>
 
             </li>
           ))}
