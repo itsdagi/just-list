@@ -11,7 +11,7 @@ export default function App() {
       </h1>
          <ul>
           {tasks.map((task)=>(
-            <li>
+            <li key={task.id}>
               <span>
                 {task.id} - {task.name}
               </span>
