@@ -9,16 +9,15 @@ export default function App() {
       <h1>
         Task List
       </h1>
-         <ul>
-          {tasks.map((task)=>(
-            <li key={task.id}>
-              <span>
-                {task.id} - {task.name}
-              </span>
-              <button>Delete</button>
-            </li>
-          ))}
-         </ul>
+
+      <ul>
+        {tasks.map((task)=>(
+        <li>
+
+        </li>
+        ))}
+      </ul>
+        
     </div>
   );
 }
