@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.css';
-import {useState} from 'react'
+import {useState} from 'react';
 
 export default function App() {
+
   const [tasks, setTasks] = useState([{id: 1, name:'Dagim', completed: false},{id: 2, name:"Abebe",completed: false},{id: 3, name:"Zeleke",completed: true},])
   const [show, setShow] = useState(true)
 
