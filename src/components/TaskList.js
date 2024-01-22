@@ -3,7 +3,7 @@ import { useState } from 'react'
 import TaskCard from './TaskCard'
 
 export default function TaskList() {
-    const [tasks, setTasks] = useState([{id: 1, name:'Dagim', completed: false},{id: 2, name:"Abebe",completed: false},{id: 3, name:"Zeleke",completed: true},])
+    const [tasks, setTasks] = useState([{id: 1, name:'Complete thesis proposal in two weeks', completed: false},{id: 2, name:"Finish The stranger book",completed: false},{id: 3, name:"Work on new React project",completed: true},])
     const [show, setShow] = useState(true)
   
     function handleDelete(id){
