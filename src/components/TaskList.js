@@ -17,7 +17,7 @@ export default function TaskList() {
    <button className='trigger' onClick={() => setShow(!show)}>Toggle</button>
   <ul>
     {show && tasks.map((task)=>(
-      <TaskCard task={task} handleDelete={handleDelete}/>
+      <TaskCard key={task.id} task={task} handleDelete={handleDelete}/>
     ))}
   </ul>
   </>
