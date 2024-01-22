@@ -1,9 +1,9 @@
-
-export default function TaskCard() {
+import '../App.css'
+export default function TaskCard(props) {
   return (
-    <li  key={task.id} className={task.completed  ? 'completed' : 'incomplete'}>
-     <span>{task.id} - {task.name}</span>  
-     <button onClick={() => handleDelete(task.id)} className='delete'>Delete</button>
+    <li  key={props.task.id} className={props.task.completed  ? 'completed' : 'incomplete'}>
+     <span>{props.task.id} - {props.task.name}</span>  
+     <button className='delete'>Delete</button>
     </li>
   )
 }

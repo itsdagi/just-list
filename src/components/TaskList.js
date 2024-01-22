@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import TaskCard from './TaskCard'
+
 export default function TaskList() {
     const [tasks, setTasks] = useState([{id: 1, name:'Dagim', completed: false},{id: 2, name:"Abebe",completed: false},{id: 3, name:"Zeleke",completed: true},])
     const [show, setShow] = useState(true)
@@ -16,7 +17,7 @@ export default function TaskList() {
    <button className='trigger' onClick={() => setShow(!show)}>Toggle</button>
   <ul>
     {show && tasks.map((task)=>(
-      <TaskCard/>
+      <TaskCard task={task} handleDelete={handleDelete}/>
     ))}
   </ul>
   </>
