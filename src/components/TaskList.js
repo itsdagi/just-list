@@ -14,6 +14,7 @@ export default function TaskList() {
     <h1>
     Task List
   </h1>
+    
    <button className='trigger' onClick={() => setShow(!show)}>Toggle</button>
   <ul>
     {show && tasks.map((task)=>(
