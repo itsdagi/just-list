@@ -21,6 +21,10 @@ export default function TaskList() {
       <TaskCard key={task.id} task={task} handleDelete={handleDelete}/>
     ))}
   </ul>
+
+  <div className="box">
+    
+  </div>
   </>
   )
 }
