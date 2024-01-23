@@ -3,7 +3,7 @@ import React from 'react'
 export default function Footer() {
   return (
     <footer>
-      copyright 2024 - BroTask
+        <p>2027 - BroTask</p>
     </footer>
   )
 }

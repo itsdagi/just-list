@@ -24,7 +24,17 @@
     font-size: 18px;
     padding: 0px 10px;
   }
-  
+  footer{
+   
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    max-width: 1000px;
+    margin: auto;
+    border-top: 1px solid #2e609a;
+    font-size: 18px;
+    padding: 0px 10px;
+  }
   img{
     max-width: 40px;
   }
