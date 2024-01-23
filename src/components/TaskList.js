@@ -15,11 +15,14 @@ export default function TaskList() {
     Task List
   </h1>
     
-   <button className='trigger' onClick={() => setShow(!show)}>Toggle</button>
+    <button className="trigger">Toggle</button>
+   
   <ul>
+
     {show && tasks.map((task)=>(
       <TaskCard key={task.id} task={task} handleDelete={handleDelete}/>
     ))}
+
   </ul>
 
   <div className="box">
