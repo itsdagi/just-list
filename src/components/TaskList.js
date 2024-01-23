@@ -10,13 +10,21 @@ export default function TaskList() {
     function handleDelete(id){
       setTasks(tasks.filter(task => id !== task.id))
     }
+     
+   const styles = {
+        color: "#be3434",
+        border: "2px solid",
+        borderColor: show ? '#3D8361' : "#be3434",
+        borderRadius: "5px",
+        fontSize: "28px",
+        padding:"20px"
+   }
+       
   return (
     <>
-    <h1>
-    Task List
-  </h1>
+    <h1 style={styles}>Task List</h1>
 
-    <button onClick={() => setShow(!show)} className="trigger">Toggle</button> 
+      <button onClick={() => setShow(!show)} className="trigger">{show ? "Hide" : "Show"}</button> 
    
   <ul>
 

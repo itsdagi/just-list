@@ -6,7 +6,7 @@ export default function BoxCard({result, children}) {
      
      <div className={`box ${result}`}>
         {children}
-        <button onClick={()=> setShow(!show)} className="trigger">Hide</button>
+        <button style={{width:"70%"}} onClick={()=> setShow(!show)} className="trigger">Hide</button>
      </div>
     
     </div>
