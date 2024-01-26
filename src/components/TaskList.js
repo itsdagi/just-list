@@ -12,12 +12,12 @@ export default function TaskList() {
     }
      
    const styles = {
-        color: "#be3434",
+        color: "white",
         border: "2px solid",
-        borderColor: show ? '#3D8361' : "#be3434",
-        borderRadius: "5px",
-        fontSize: "28px",
-        padding:"20px"
+        backgroundColor: show ? '#3D8361' : "gray",
+        borderRadius: "30px",
+        fontSize: "30px",
+        padding:"20px 2px"  
    }
        
   return (
