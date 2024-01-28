@@ -16,18 +16,18 @@ export default function TaskList() {
         border: "2px solid",
         backgroundColor: show ? '#3D8361' : "gray",
         borderRadius: "30px",
-        fontSize: "30px",
+        fontSize: "25px",
         padding:"20px 2px"  
    }
        
   return (
     <>
-    <h1 style={styles}>Task List</h1>
-
-      <button onClick={() => setShow(!show)} className="trigger">{show ? "Hide" : "Show"}</button> 
+    
    
   <ul>
+  <h1 style={styles}>Task List</h1>
 
+<button onClick={() => setShow(!show)} className="trigger">{show ? "Hide Tasks" : "Show Tasks"}</button> 
     {show && tasks.map((task)=>(
       <TaskCard key={task.id} task={task} handleDelete={handleDelete}/>
     ))}
