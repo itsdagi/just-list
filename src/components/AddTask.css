@@ -44,3 +44,9 @@
     padding: 7px 10px;
     margin: 10px;
 }
+
+.reset{
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}

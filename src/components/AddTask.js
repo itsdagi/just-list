@@ -16,6 +16,7 @@ export default function AddTask() {
             
             <input onChange={handleChange} type="text" name='task' id='task' placeholder='Task Name' autoComplete='off'/>
             <button type='submit'>Add Task</button>
+            <span className='reset'>Reset</span>
         </form>
     </section>
   )
