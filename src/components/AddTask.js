@@ -13,12 +13,26 @@ export default function AddTask() {
   const handleReset = ()=>{
       setTaskValue("");
   }
+  const handleSubmit =(event)=>{
+    event.preventDefault();
+     const task = {
+      id: Math.floor(Math.random() * 10000000),
+      name: taskValue,
+      completed:false
+     } 
+     handleReset();
+     console.log(task)
+  }
 
   return (
     <section className='addtask'>
-        <form>
+        <form onSubmit={handleSubmit}>
             
-            <input onChange={handleChange} type="text" name='task' id='task' placeholder='Task Name' autoComplete='off'/>
+            <input onChange={handleChange} type="text" name='task' id='task' placeholder='Task Name' autoComplete='off' value={taskValue}/>
+            <select onChange={()=>{}}>
+              <option value={false}>False</option>
+              <option value={true}>True</option>
+            </select>
             <button type='submit'>Add Task</button>
             <span onClick={handleReset} className='reset'>Reset</span>
         </form>
