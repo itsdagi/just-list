@@ -18,7 +18,7 @@ export default function AddTask() {
      const task = {
       id: Math.floor(Math.random() * 10000000),
       name: taskValue,
-      completed:false
+      completed:progress
      } 
      handleReset();
      console.log(task)
@@ -29,9 +29,9 @@ export default function AddTask() {
         <form onSubmit={handleSubmit}>
             
             <input onChange={handleChange} type="text" name='task' id='task' placeholder='Task Name' autoComplete='off' value={taskValue}/>
-            <select onChange={()=>{}}>
-              <option value={false}>False</option>
-              <option value={true}>True</option>
+            <select onChange={(event)=> setProgress(event.target.value)}>
+              <option value={false}>Pending</option>
+              <option value={true}>Completed</option>
             </select>
             <button type='submit'>Add Task</button>
             <span onClick={handleReset} className='reset'>Reset</span>
