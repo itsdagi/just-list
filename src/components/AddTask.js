@@ -5,7 +5,8 @@ import {useState} from "react"
 export default function AddTask() {
 
   const [taskValue, setTaskValue] = useState(" ");
-  const [progress, setProgress] = useState("");
+  const [progress, setProgress] = useState("")
+
   const handleChange =(event)=>{
       setTaskValue(event.target.value)
   }
@@ -22,7 +23,7 @@ export default function AddTask() {
       completed: Boolean(progress)
      } 
      handleReset();
-     console.log(task)
+     console.log(task);
      
   }
 
